@@ -3,7 +3,7 @@
 ## Stack
 
 - [Node.js](https://nodejs.org/en/) 12x
-- [Serverless](https://serverless.com/framework/docs/))
+- [Serverless](https://serverless.com/framework/docs/)
 - [Typescript](https://www.typescriptlang.org/) (> 3.8) for type checking.
 - A sample [docker-compose.yml](https://docs.docker.com/compose/), which allow us to test our App with [Docker](https://www.docker.com/).
 
@@ -129,7 +129,7 @@ plugins: [
 ],
 ```
 
-### Clean our Handler with types
+### Update our Handler with types
 
 ```typescript
 import { APIGatewayProxyHandler, APIGatewayEvent, Context, Callback } from 'aws-lambda';
@@ -165,7 +165,7 @@ export const hello: APIGatewayProxyHandler = async (
 - Give serverless-admin Programatic access
 - Attach the AdministratorAccess policy
 
-Save your new AWS profile into ~/.aws/credentials (with your values) :
+Save your new AWS profile into ~/.aws/credentials (Don't forget to set your values :D) :
 
 ```test
 [serverless-admin]
